@@ -159,6 +159,12 @@ h2{
 h3{
     font-family: 'Merriweather', serif;
     color: #57837B;
+    font-size: 1rem;
+}
+
+p{
+    font-family: 'Merriweather', serif;
+    font-size: 1rem;
 }
 
 .header{
@@ -248,10 +254,10 @@ padding-top: 20px;
     margin: 0 10px;
 }
 
-.twitter{
-height: 35px;
-width: auto;
-margin: 0 10px;
+.twitter-follow-button{
+    margin-bottom: 7px;
+    margin-right: 5px;
+    margin-left: 10px;
 }
 
 .instagram{
@@ -529,7 +535,10 @@ hr{
         margin: 0 auto;
         max-height: 100%;
         max-width: 100%;
+        position: relative;
+        top: 100px;
     }
+
 
     .cloud-top{
         padding: 0;
@@ -537,20 +546,67 @@ hr{
         margin: 0 auto;
         max-height: 100%;
         max-width: 100%;
-        
+        position: relative;
+        left: 150px;
+        width: 100px;
+        height: 50px;
     }
 
-    .cloud-bottom{
+    /* .cloud-bottom{
         padding: 0;
         display: block;
         margin: 0 auto;
         max-height: 100%;
         max-width: 100%;
-    }
+        position: relative;
+        left: 10px;
+        right: 250px;
+        width: 100px;
+        height: 50px;
+    } */
 
     .lion{
         display: none;
     }
+
+    p{
+        font-size: 0.75rem;
+    }
+
+    .timeline-data{
+        font-size: 0.75rem;
+    }
+
+    h1{
+        font-size: 1.75rem;
+    }
+
+    h2{
+        font-size: 1rem;
+    }
+
+    .item1{
+        float: left;
+        padding: 10px;
+        order: 1;
+        position: absolute;
+        right: 400px;
+        display: inline;
+        float: right; 
+        width: auto;     
+    }
+
+    .item2{
+        float: left;
+    }
+
+    .item3{
+        float: left;
+    }
+
+
+
+
 
     /* .menu{
         display: flex;
