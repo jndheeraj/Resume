@@ -615,6 +615,15 @@ hr{
     opacity: 1;
   }
 
+
+  .timeline-rhombus ul li::after {
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  }
+   
+  .timeline-rhombus ul li div::before {
+    bottom: 12px;
+  }
+
   @media screen and (max-width: 900px) {
     
   
@@ -650,7 +659,7 @@ hr{
     .bars .button2{
         order: 1;
         font-size: 30px;
-/*         border-bottom: 1px #444 solid; */
+        /* border-bottom: 1px #444 solid; */
         list-style: none; 
         
     }
@@ -787,16 +796,34 @@ hr{
 
     }
 
+   .inter{
+    width: 75%;
+    margin: 10px auto 10px auto;
+    text-align:center;
+    line-height: 2;
+   }
+
+   .skill-row{
+    width: 70%;
+    /* margin: 25px auto 250px auto; */
+    text-align:left;
+   }
+
+   .motorcycle{
+    height: 100px;
+    width: auto;
+    float: right;
+    margin: 0 10px 50px 0;
+    padding-top: 40px;
+    margin-bottom: 90px;
+    margin-left: 0px;
+    }
     /* .menu{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
     } */
-
-  
-
-  
 
   .timeline-clippy ul li::after {
     width: 40px;
@@ -816,5 +843,6 @@ hr{
       text-align: center;
       position: relative;
       right: 19px;
+      margin-left: -10px;
   }
 }
