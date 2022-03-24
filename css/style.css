@@ -649,8 +649,8 @@ hr{
 
     .bars .button2{
         order: 1;
-        font-size: 35px;
-        border-bottom: 1px #444 solid;
+        font-size: 30px;
+/*         border-bottom: 1px #444 solid; */
         list-style: none; 
         
     }
@@ -678,7 +678,7 @@ hr{
 
     .logo{
         font-size: 20px;
-        width: 60px;
+        width: 35px;
         height: auto;
     }
 
