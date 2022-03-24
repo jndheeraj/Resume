@@ -5,6 +5,7 @@
 } */
 
 
+
 .bird {
     background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/174479/bird-cells-new.svg);
     background-size: auto 100%;
@@ -168,10 +169,13 @@ p{
 }
 
 .header{
-    margin-top: 43px ;
+    
     /* background-color: #E8F6EF; */
     background-color: #ecf7fc;
-}
+    width: 100%;
+    left: 0;
+    right: 0;
+} 
 
 .lion{
     width: 100px;
@@ -195,8 +199,7 @@ p{
     padding: 100px;
     position: relative;
     right: 250px;
-    top: 0px;
-    /* z-index: 9; */
+    top: 100px;
 }
 
 .cloud-bottom{
@@ -272,10 +275,10 @@ padding-top: 20px;
     padding-top: 4px;
 }
 
-.banner{
+/* .banner{
     background-color: #F8485E;
-    height: 42px;
-    width: 100%;
+    height: auto;
+    width:100%;
     position: absolute;
     top: 0px;
     border-bottom-style: solid;
@@ -283,9 +286,126 @@ padding-top: 20px;
     border-color: #d35454;
     position:fixed;
     z-index: 9;
-    /* display: none; */
+} */
+
+/* .navbar{
+    background-color: #F8485E;
+  
+    position: absolute;
+    top: 0px;
+    margin: 0px;
+    position:fixed;
+    z-index: 9;
+    display: flex;
+    padding: 0px;
+  
+  
+    max-width: 100%;
+    gap: 1em;
+    padding: 20px;
+    align-items: center;
+   
+    
+    
+} */
+
+
+
+/* .banner .nav-item{
+    list-style-type: none;
+    padding: 5px 14px;
+} */
+
+
+.navig{
+    top: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10%;
+    /* background-color: #FFE484; */
+    /* background-color: #F4BBBB; */
+    /* background-color: #D54C4C; */
+    background-color: #F8485E;
+    flex-wrap: nowrap;
+   
 }
 
+.logo{
+    cursor: pointer;
+    font-size: 20px;
+    width: 35px;
+    height: auto;
+    border: 2px solid white;
+}
+
+.navig .hamburger{
+    color: white;
+    font-size: 22px;
+    display: none;
+
+}
+/* .navbar{
+    margin-top: 5px;
+    margin-bottom: 5px;
+} */
+
+
+.nav-item{
+    display: inline;
+    /* padding: 0px 40px; */
+    padding: 10px;
+}
+
+.nav-item a{
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+    color: white;
+    font-weight: 500;
+    font-family: 'Merriweather', serif;
+}
+
+.nav-item a:hover{
+    /* color: #05595B; */
+    color:rgba(255, 201, 0, 1);
+}
+
+.navbar li {
+    list-style-type: none;
+}
+
+.contact button{
+    color: white;
+    border: none;
+    list-style: none;
+    text-decoration: none;
+    padding: 9px 25px;
+    background-color: rgba(8, 110, 125, 1);
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    font-size: 500;
+}
+
+.contact button:hover{
+    background-color: rgba(255, 201, 0, 1);
+    color: rgba(8, 110, 125, 1);
+}
+
+.button2{
+    color: white;
+    text-decoration: none;
+    list-style: none;
+    font-size: 25px;
+    /* padding: 9px 25px; */
+    background-color: #F8485E;
+    border-style: none;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    font-size: 500;
+    display: none;
+}
 
 
 .skill-row{
@@ -306,15 +426,15 @@ hr{
     margin: auto;
 }
 
-.menu{
+/* .menu{
     list-style-type: none;
     align-items: flex-start;     
-        flex-wrap: nowrap;
+    flex-wrap: nowrap;
         
         /* background: none; */
-}
 
-.item1{
+
+/* .item1{
         padding: 10px;
         order: 1;
         position: absolute;
@@ -342,17 +462,13 @@ hr{
     display: inline;
     float: right; 
     width: auto;     
-}
+} */
 
 .toggle {
     display: none;
 }
 
-.mb{
-    color: white;
-    text-decoration: none;
 
-}
 
 .item1:not(.button) a:hover,
 .item1 a:hover::after {
@@ -369,7 +485,7 @@ hr{
     color: #ccc;
 }
 
-.home-btn {
+/* .home-btn {
    
     color: #FFFFFF;
     font-family: 'Merriweather', serif;
@@ -393,7 +509,7 @@ hr{
     background: #003638;
     background-image: -webkit-linear-gradient(top,  #003638,#D54C4C);
     text-decoration: none;
- }
+ } */
 
   /* {
     display: inline-block;
@@ -500,6 +616,11 @@ hr{
   }
 
   @media screen and (max-width: 900px) {
+    
+  
+
+    
+    
     .timeline ul li div {
       width: 250px;
     }
@@ -509,6 +630,64 @@ hr{
   }
 
   @media screen and (max-width: 600px) {
+   
+   .button2{
+       display: block;
+   }
+
+    .navbar{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navbar li a{
+        display: block;
+        padding: 15px 5px;
+    }
+
+    .bars .button2{
+        order: 1;
+        font-size: 35px;
+        border-bottom: 1px #444 solid;
+        list-style: none; 
+        
+    }
+
+
+    .nav-item.button{
+        order: 2;
+    }
+
+    .nav-item{
+        order: 3;
+        width: 100%;
+        text-align: center;   
+        display: none;
+    }
+
+    /* .nav-item .button2{
+        display: block;
+        font-size: 25px;
+    } */
+
+    /* .navig a{
+        display: none;
+    } */
+
+    .logo{
+        font-size: 20px;
+        width: 60px;
+        height: auto;
+    }
+
+    .active .nav-item {
+        display: block;
+    }
+
+   
+   
     .timeline ul li {
       margin-left: 20px;
       
@@ -539,6 +718,15 @@ hr{
         top: 100px;
     }
 
+    body {margin: 0; height: 100%; overflow-x: hidden}
+
+    .header{
+        
+        width: fit-content;
+        left: 0;
+        right: 0;
+        overflow: auto;
+    }
 
     .cloud-top{
         padding: 0;
@@ -550,6 +738,7 @@ hr{
         left: 150px;
         width: 100px;
         height: 50px;
+        z-index: 1;
     }
 
     /* .cloud-bottom{
@@ -565,48 +754,38 @@ hr{
         height: 50px;
     } */
 
+    
+
     .lion{
         display: none;
     }
 
     p{
-        font-size: 0.75rem;
-    }
-
-    .timeline-data{
-        font-size: 0.75rem;
-    }
-
-    h1{
-        font-size: 1.75rem;
-    }
-
-    h2{
         font-size: 1rem;
     }
 
-    .item1{
-        float: left;
-        padding: 10px;
-        order: 1;
-        position: absolute;
-        right: 400px;
-        display: inline;
-        float: right; 
-        width: auto;     
+    .timeline-data{
+        font-size: 1rem;
     }
 
-    .item2{
-        float: left;
+    h1{
+        font-size: 2.75rem;
     }
 
-    .item3{
-        float: left;
+    h2{
+        font-size: 2rem;
     }
 
+    h3{
+        font-size: 1.5rem;
+    }
 
+    .navbar{
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
 
-
+    }
 
     /* .menu{
         display: flex;
@@ -615,7 +794,7 @@ hr{
         align-items: center;
     } */
 
-  }
+  
 
   
 
@@ -638,3 +817,4 @@ hr{
       position: relative;
       right: 19px;
   }
+}

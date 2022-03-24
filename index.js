@@ -23,8 +23,8 @@ function callbackFunc() {
 window.addEventListener("load", callbackFunc);
 window.addEventListener("scroll", callbackFunc);
 
-const toggle = document.querySelector(".toggle");
-const menu = document.querySelector(".menu");
+const toggle = document.querySelector(".button2");
+const menu = document.querySelector(".navbar");
  
 /* Toggle mobile menu */
 function toggleMenu() {
@@ -32,14 +32,15 @@ function toggleMenu() {
         menu.classList.remove("active");
          
         // adds the menu (hamburger) icon
-        toggle.querySelector("a").innerHTML = "<i class=’fas fa-bars’></i>";
+        toggle.querySelector("button").innerHTML = "<i class=’fas fa-bars’></i>";
     } else {
         menu.classList.add("active");
          
         // adds the close (x) icon
-        toggle.querySelector("a").innerHTML = "<i class=’fas fa-times’></i>";
+        toggle.querySelector("button").innerHTML = "<i class=’fas fa-times’></i>";
     }
 }
+
  
 /* Event Listener */
 toggle.addEventListener("click", toggleMenu, false);
@@ -54,3 +55,5 @@ function closeSubmenu(e) {
    
   /* Event listener */
   document.addEventListener("click", closeSubmenu, false);
+
+  
